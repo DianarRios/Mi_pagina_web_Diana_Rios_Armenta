@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    text-align: center; /* Centra el video horizontalmente */
+  }
+
+header {
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1200;
+    font-style: normal;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 2rem 0;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+main {
+    background-color: bisque;
+}
+aside {
+    background-color: rgb(151, 145, 233);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 2rem 0;
+    img {
+        max-width: 100%; /* Limita el ancho máximo */
+        max-height: 400px; /* Limita la altura máxima */
+
+
+
+      }
+      
+            
+}
+footer {
+    background-color: blue;
+    font-family: "Roboto Condensed", sans-serif, ;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    
+    img {
+        float: right;
+        margin-right: 30px; /* Espacio a la izquierda de la imagen */
+      margin-bottom: 0%; 
+        max-width: 50%; /* Limita el ancho máximo */
+        max-height: 200px; /* Limita la altura máxima */
+
+
+
+      }
+
+      
+}
+  
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 2rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado" 
+    "pie pie pie"
+    ;
+}
+header {
+    grid-area: cabeza;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration-color: aliceblue;
+}
+main {
+    grid-area: principal;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 2rem 0;
+               p {
+        text-align: justify; /* Justifica el párrafo */
+        p {
+            font-size: 18px; /* Cambia el tamaño del texto a 18 píxeles */
+          }
+      }
+}
+aside {
+    grid-area: lado;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    
+    
+      
+}
+footer {
+    grid-area: pie;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+color: rgb(253, 253, 253);
+}
